@@ -1,44 +1,53 @@
 h2 { font-size: 35px; }
+
 h1 {
   margin-left: 22.5%;
   font-size: 40px;
   margin-top: 7.5%;
   margin-bottom: 0;
 }
-.data{
+
+.data {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   width: 50%;
   margin-left: 25%;
   grid-gap: 5%;
 }
+
 .title {
   display: flex;
 }
+
 .title input {
   height: 30%;
   align-self: center;
   margin-left: 5%;
   width: 80px;
 }
+
 .display-score {
   display: flex;
   flex-direction: column;
   grid-column: 1 / 1 span;
 }
+
 .user-add-score {
   display: flex;
   flex-direction: column;
   grid-column: 2 / 1 span;
 }
 .user-input { margin-bottom: 5%; }
+
 .submit-button {
   width: 25%;
   align-self: flex-end;
 }
+
 hr {
-  width : 40%;
+  width: 40%;
 }
+
 footer {
   background-color: rgb(65, 66, 70);
   width: 100%;
@@ -47,10 +56,12 @@ footer {
   bottom: 0;
   left: 0;
 }
-footer p { 
+
+footer p {
   text-align: center;
   color: #5e5e67;
 }
+
 .players-scores {
   border: 2px solid black;
   display: flex;
