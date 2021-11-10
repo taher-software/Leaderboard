@@ -1,20 +1,22 @@
 const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
 
-const addNewGame = (endpoint = '', gameName = '') => {
+const addNewGame = async (endpoint = '', gameName = '') => {
   const targetUrl = url + endpoint;
   const data = { name: gameName };
-  return fetch(targetUrl, {
+  const resp = await fetch(targetUrl, {
     method: 'POST',
     headers: {
       'content-type': 'application/json',
     },
     body: JSON.stringify(data),
-  }).then((resp) => resp.json());
+  });
+  return (resp.json());
 };
 
-const getScore = (id = '') => {
+const getScore = async (id = '') => {
   const targetUrl = `${url}games/${id}/scores/`;
-  return fetch(targetUrl).then((resp) => resp.json());
+  const resp = await fetch(targetUrl);
+  return resp.json();
 };
 
 const addScore = (user, score) => {
@@ -27,16 +29,17 @@ const addScore = (user, score) => {
   else newSCore.style.backgroundColor = '#fff';
   playersScores.appendChild(newSCore);
 };
-const postScore = (userName, userScore, id) => {
+const postScore = async (userName, userScore, id) => {
   const targetUrl = `${url}games/${id}/scores`;
   const data = { user: userName, score: userScore };
-  return fetch(targetUrl, {
+  const resp = await fetch(targetUrl, {
     method: 'POST',
     headers: {
       'content-type': 'application/json',
     },
     body: JSON.stringify(data),
-  }).then((resp) => resp.json());
+  });
+  return resp.json();
 };
 export {
   url, addNewGame, getScore, addScore, postScore,
