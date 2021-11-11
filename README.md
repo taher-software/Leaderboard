@@ -10,8 +10,9 @@ This leaderboard website displays scores submitted by different players. It also
 - CSS
 - Git & Github
 - Webpack
-- Jvascript
-- 
+- Javascript
+- API
+- Promise and async 
 
 ### Install
 
@@ -44,7 +45,7 @@ $ cd Leaderboard/
 - For anyone who wants to create a display score leaderboard site.
 
 ### Live Demo 
-[site]())
+[site](https://taher-web-dev.github.io/Leaderboard/)
 
 ## Authors
 
