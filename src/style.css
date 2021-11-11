@@ -37,6 +37,7 @@ h1 {
   flex-direction: column;
   grid-column: 2 / 1 span;
 }
+
 .user-input {
   margin-bottom: 5%;
   height: 25px;
