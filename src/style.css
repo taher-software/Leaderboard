@@ -71,5 +71,7 @@ footer p {
   border: 2px solid black;
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
+  max-height: 200px;
 }
 .score p { margin-left: 5%; }
